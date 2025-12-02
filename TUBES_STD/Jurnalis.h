@@ -7,6 +7,8 @@ using namespace std;
 struct Jurnalis {
     string idJurnalis;
     string nama;
+    string bidang;
+    string status;
 };
 
 typedef struct Jurnalis infotypeJurnalis;
