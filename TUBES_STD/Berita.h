@@ -32,4 +32,6 @@ void deleteAfterBerita(ListBerita &B, adrBerita prec, adrBerita &b);
 adrBerita findBerita(ListBerita B, string judBer);
 void showAllBerita(ListBerita B);
 
+
+
 #endif // BERITA_H_INCLUDED

@@ -13,7 +13,7 @@ adrJurnalis allocateJurnalis(infotypeJurnalis x) {
     P->info.status = x.status;
     P->next = NULL;
     P->prev = NULL;
-    
+
     return P;
 }
 
@@ -107,10 +107,10 @@ void showAllJurnalis(ListJurnalis J) {
         cout << "List Jurnalis Kosong!" << endl;
         return;
     }
-    
+
     cout << "\n========== DAFTAR JURNALIS ==========" << endl;
     cout << "-------------------------------------" << endl;
-    
+
     int nomor = 1;
     while (p != NULL) {
         cout << "Jurnalis ke-" << nomor << endl;
@@ -119,7 +119,7 @@ void showAllJurnalis(ListJurnalis J) {
         cout << "Bidang      : " << p->info.bidang << endl;
         cout << "Status      : " << p->info.status << endl;
         cout << "-------------------------------------" << endl;
-        
+
         p = p->next;
         nomor++;
     }

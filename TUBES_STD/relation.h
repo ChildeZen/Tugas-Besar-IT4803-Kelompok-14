@@ -1,12 +1,12 @@
-#ifndef RELASI_H_INCLUDED
-#define RELASI_H_INCLUDED
+#ifndef RELATION_H_INCLUDED
+#define RELATION_H_INCLUDED
 #include "jurnalis.h"
 #include "berita.h"
 
 typedef struct elmRelasi *adrRelasi;
 
 struct elmRelasi {
-    adrBerita berita; 
+    adrBerita berita;
     adrRelasi next;
 };
 
@@ -14,6 +14,4 @@ struct ListRelasi {
     adrRelasi first;
 };
 
-next = NULL
-berita = find
-#endif
+#endif // RELATION_H_INCLUDED
