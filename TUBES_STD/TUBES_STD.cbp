@@ -33,7 +33,11 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Berita.h" />
+		<Unit filename="Berita_103032400031.cpp" />
+		<Unit filename="Berita_103032400126.cpp" />
 		<Unit filename="Jurnalis.h" />
+		<Unit filename="Jurnalis_103032400031.cpp" />
+		<Unit filename="Jurnalis_103032400126.cpp" />
 		<Unit filename="Relation.h" />
 		<Unit filename="main.cpp" />
 		<Extensions />
