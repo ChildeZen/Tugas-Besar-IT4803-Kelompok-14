@@ -28,10 +28,12 @@ void insertFirstBerita(ListBerita &B, adrBerita b); //sudah//
 void insertLastBerita(ListBerita &B, adrBerita b); //sudah//
 void insertafterBerita(ListBerita &B, adrBerita prec, adrBerita &b); //sudah//
 void deleteFirstBerita(ListBerita &B, adrBerita &b); //sudah//
-void deleteLastBerita(ListBerita &B, adrBerita &b);
+void deleteLastBerita(ListBerita &B, adrBerita &b); //sudah//
 void deleteAfterBerita(ListBerita &B, adrBerita prec, adrBerita &b); //sudah//
-adrBerita findBerita(ListBerita B, string judulBerita);
+adrBerita findBerita(ListBerita B, string judulBerita); //sudah//
 void showAllBerita(ListBerita B); //sudah//
+
+//belum Show data child dari parent tertentu//
 
 
 

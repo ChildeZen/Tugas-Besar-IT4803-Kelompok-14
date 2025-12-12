@@ -17,11 +17,11 @@ int main()
         switch(option) {
            case 1  :
               cout << "you choose option 1" << endl;
-              menuAdmin();
+              //menuAdmin();
               break;
            case 2  :
               cout << "you choose option 2" << endl;
-              menuUser();
+              //menuUser();
               break;
 
            default :

@@ -4,8 +4,7 @@
 #include <string>
 using namespace std;
 #include "jurnalis.h"
-#include "relation.h"
-
+#include "Berita.h"
 
 
 //parent.h atau jurnalis.h
@@ -19,7 +18,19 @@ struct Jurnalis {
 
 typedef struct Jurnalis infotypeJurnalis;
 typedef struct elmJurnalis *adrJurnalis;
+typedef struct elmRelasi *adrRelasi;
 
+//relation.h//
+
+
+struct elmRelasi {
+    adrBerita info;
+    adrRelasi next;
+};
+
+struct ListRelasi {
+    adrRelasi first;
+};
 struct elmJurnalis {
     infotypeJurnalis info;
     adrJurnalis next;
@@ -31,6 +42,21 @@ struct ListJurnalis {
     adrJurnalis first;
     adrJurnalis last;
 };
+
+
+void createList(ListRelasi &L);
+void insertFirst(ListRelasi &L, adrRelasi P);
+void insertLast(ListRelasi &L, adrRelasi P);
+void insertAfter(adrRelasi Prec, adrRelasi P);
+void deleteFirst(ListRelasi &L, adrRelasi &P);
+void deleteLast(ListRelasi &L, adrRelasi &P);
+void deleteAfter(ListRelasi Prec, adrRelasi &P);
+
+
+adrRelasi alokasi(adrBerita C);
+void dealokasi(adrRelasi &P);
+adrRelasi findElm(ListRelasi L, adrBerita C);
+void printInfo(ListRelasi L);
 
 void createListJurnalis(ListJurnalis &J);
 adrJurnalis allocateJurnalis(infotypeJurnalis x);

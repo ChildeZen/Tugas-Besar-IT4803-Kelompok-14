@@ -1,4 +1,4 @@
-#include "relation.h"
+#include "Jurnalis.h"
 #include <iostream>
 
 void createList(ListRelasi &L){
