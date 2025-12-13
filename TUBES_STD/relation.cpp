@@ -12,21 +12,6 @@ adrRelasi alokasi(adrBerita C){
     return p;
 }
 
-void insertFirst(ListRelasi &L, adrRelasi P){
-    P->next = L.first;
-    L.first = P;
-}
-
-void insertLast(ListRelasi &L, adrRelasi P){
-
-}
-void insertAfter(adrRelasi Prec, adrRelasi P){}
-void deleteFirst(ListRelasi &L, adrRelasi &P){}
-void deleteLast(ListRelasi &L, adrRelasi &P){}
-void deleteAfter(ListRelasi Prec, adrRelasi &P){}
-
-
-
 void dealokasi(adrRelasi &P){}
 
 adrRelasi findElm(ListRelasi L, adrBerita C){

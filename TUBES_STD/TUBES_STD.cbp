@@ -38,6 +38,7 @@
 		<Unit filename="Jurnalis.h" />
 		<Unit filename="Jurnalis_103032400031.cpp" />
 		<Unit filename="Jurnalis_103032400126.cpp" />
+		<Unit filename="Relation_103032400031.cpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="relation.cpp" />
 		<Unit filename="relation.h" />

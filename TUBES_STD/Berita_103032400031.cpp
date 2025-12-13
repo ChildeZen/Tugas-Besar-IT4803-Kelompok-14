@@ -27,7 +27,6 @@ void deleteLastBerita(ListBerita &B, adrBerita &b){
     adrBerita q;
 
     if(B.first == nullptr){
-        cout << "list kosong";
         b = nullptr;
     } else if (B.first->next == nullptr) {
         b = B.first;
