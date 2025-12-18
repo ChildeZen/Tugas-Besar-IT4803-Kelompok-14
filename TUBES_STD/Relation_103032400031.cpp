@@ -65,7 +65,7 @@ void deleteAfter(adrRelasi &Prec, adrRelasi &P){
     }
 }
 
-void showJurnalisWithBerita_103032400031(ListJurnalis J){
+void showJurnalisWithBerita(ListJurnalis J){
     adrRelasi r;
     adrJurnalis p = J.first;
 
@@ -146,16 +146,27 @@ int countJurnalisByBerita(ListJurnalis J, adrBerita target){
 
 void editRelasiBerita(adrJurnalis p, adrBerita lama, adrBerita baru){
     adrRelasi r = p->Berita.first;
+
     while (r != nullptr){
         if (r->info == lama){
+
+            // kondisi judul sama
+            if (baru->info.judulBerita == lama->info.judulBerita){
+                cout << "judul baru == judul lama" << endl;
+                return;
+            }
+
+            // ganti relasi jika judul berbeda
             r->info = baru;
             cout << "Relasi berhasil diperbarui." << endl;
             return;
         }
         r = r->next;
     }
+
     cout << "Relasi tidak ditemukan." << endl;
 }
+
 
 
 

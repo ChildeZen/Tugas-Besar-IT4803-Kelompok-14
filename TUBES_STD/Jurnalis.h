@@ -55,7 +55,7 @@ adrRelasi alokasi(adrBerita C);
 void dealokasi(adrRelasi &R);
 void connectJurnalisBerita(ListJurnalis &J, ListBerita B, string namaJurnalis, string judulBerita);
 
-void showJurnalisWithBerita_103032400031(ListJurnalis J);
+void showJurnalisWithBerita(ListJurnalis J);
 void showJurnalisByBerita(ListJurnalis J, adrBerita target);
 void showJurnalisByJudulBerita(ListJurnalis J, ListBerita B, string judul);
 int countJurnalisByBerita(ListJurnalis J, adrBerita target);

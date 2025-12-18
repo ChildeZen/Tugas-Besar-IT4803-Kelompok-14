@@ -49,3 +49,57 @@
 
 1765987152 source:c:\penyimpanan utama\data\telkom university\semester 3\struktur data\tubes\tugas besar kelompok 13\tugas-besar-it4803-kelompok-14\tubes_std\mainadmin.cpp
 
+1766029690 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\berita_103032400031.cpp
+	"Berita.h"
+	<iostream>
+
+1766029690 c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\berita.h
+	<iostream>
+	<string>
+
+1766029690 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\berita_103032400126.cpp
+	<iostream>
+	"Berita.h"
+
+1766056227 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\jurnalis_103032400031.cpp
+	"Jurnalis.h"
+
+1766056821 c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\jurnalis.h
+	<iostream>
+	<string>
+	"Berita.h"
+
+1766029690 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\jurnalis_103032400126.cpp
+	"Jurnalis.h"
+
+1766039647 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\main.cpp
+	<iostream>
+	"main.h"
+	"Jurnalis.h"
+	"Berita.h"
+
+1766039824 c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\main.h
+	<iostream>
+	"Jurnalis.h"
+	"Berita.h"
+
+1766060681 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\relation_103032400031.cpp
+	"Berita.h"
+	"Jurnalis.h"
+
+1766056821 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\relation_103032400126.cpp
+	"Jurnalis.h"
+	"Berita.h"
+	<iostream>
+
+1766059875 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\main_user.cpp
+	"Jurnalis.h"
+	"Berita.h"
+	<iostream>
+
+1766061319 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\mainadmin.cpp
+	"main.h"
+	"Jurnalis.h"
+	"Berita.h"
+	<iostream>
+

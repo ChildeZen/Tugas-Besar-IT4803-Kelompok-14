@@ -14,8 +14,6 @@ adrJurnalis allocateJurnalis(infotypeJurnalis x) {
     P->next = nullptr;
     P->prev = nullptr;
 
-    createList(P->Berita);
-
     return P;
 }
 

@@ -1,54 +1,49 @@
 #include <iostream>
 #include "main.h"
 #include "Jurnalis.h"
+#include "Berita.h"
 
 using namespace std;
 
 int main()
 {
-    string nama, bidang, status;
-    int idJurnalis;
-    infotypeJurnalis dataJ;
     ListJurnalis LJ;
-    createListJurnalis(LJ);
-    adrJurnalis j;
+    ListBerita LB;
 
-    int option=99;
+    createListJurnalis(LJ);
+    createListBerita(LB);
+
+    int option = -99;
     while (option != 0) {
         system("cls");
         cout << "============ Menu ============ " << endl;
-        cout << "|| 1. Input Jurnalis        ||" << endl;
-        cout << "|| 2. Show                  ||" << endl;
-        cout << "|| 0. exit                  ||" << endl;
+        cout << "|| 1. Test Case             ||" << endl;
+        cout << "|| 2. Study Case            ||" << endl;
+        cout << "|| 0. Exit                  ||" << endl;
         cout << "============================== " << endl;
         cout << "Choose your option : ";
         cin >> option;
+
         switch(option) {
-           case 1  :
+           case 1:
               cout << "you choose option 1" << endl;
-              cout << "input nama: ";
-              cin >> dataJ.nama;
-              cout << "input bidang: ";
-              cin >> dataJ.bidang;
-              cout << "status: ";
-              cin >> dataJ.status;
-              cout << "input idjurnalis";
-              cin >> dataJ.idJurnalis;
-              j = allocateJurnalis(dataJ);
-              insertFirstJurnalis(LJ, j);
-              break;
-           case 2  :
-              cout << "you choose option 2" << endl;
-              showAllJurnalis(LJ);
-              system("pause");
+              menuAdmin(LJ, LB);
               break;
 
-           default :
-              exit(0);
+           case 2:
+              cout << "you choose option 2" << endl;
+              menuUser(LJ, LB);
+              break;
+
+           case 0:
+              cout << "Program selesai." << endl;
+              break;
+
+           default:
+              cout << "Pilihan tidak valid!" << endl;
+              system("pause");
         }
     }
 
-
     return 0;
 }
-
