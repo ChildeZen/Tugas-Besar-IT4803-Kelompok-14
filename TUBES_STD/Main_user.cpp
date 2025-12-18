@@ -21,7 +21,7 @@ void menuUser(ListJurnalis &LJ, ListBerita &LB) {
         cout << "|| 6. Hitung jurnalis dari berita   ||\n";
         cout << "|| 7. Hitung berita tanpa jurnalis  ||\n";
         cout << "|| 8. Edit relasi berita            ||\n";
-        cout << "|| 9. Connect                       ||\n";
+        cout << "|| 9. Connect parent to child       ||\n";
         cout << "|| 0. Keluar                        ||\n";
         cout << "=====================================\n";
         cout << "Choose your option: ";
@@ -129,7 +129,20 @@ void menuUser(ListJurnalis &LJ, ListBerita &LB) {
             cin >> judulBerita;
             connectJurnalisBerita(LJ, LB, namaJurnalis, judulBerita);
         }
+        case 10: { // Case baru untuk Disconnect
+                cout << "=== PUTUSKAN RELASI ===\n";
+                cout << "Nama Jurnalis: ";
+                cin >> namaJurnalis;
+                cout << "Judul Berita: ";
+                cin >> judulBerita;
 
+
+                disconnectJurnalisBerita(LJ, LB, namaJurnalis, judulBerita);
+
+                system("pause");
+                break;
+
+            }
         }
     }
 }

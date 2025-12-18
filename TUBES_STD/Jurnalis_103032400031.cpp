@@ -9,7 +9,6 @@ adrJurnalis allocateJurnalis(infotypeJurnalis x) {
     adrJurnalis P = new elmJurnalis;
     P->info.nama = x.nama;
     P->info.idJurnalis = x.idJurnalis;
-    P->info.bidang = x.bidang;
     P->info.status = x.status;
     P->next = nullptr;
     P->prev = nullptr;
@@ -81,17 +80,6 @@ adrJurnalis findJurnalisByName(ListJurnalis J, string name) {
     return nullptr;
 }
 
-adrJurnalis findJurnalisByBidang(ListJurnalis J, string bidang) {
-    adrJurnalis x = J.first;
-    while (x != nullptr) {
-        if (x->info.bidang == bidang) {
-            return x;
-        }
-        x = x->next;
-    }
-    return nullptr;
-}
-
 adrJurnalis findJurnalisByStatus(ListJurnalis J, string status) {
     adrJurnalis x = J.first;
     while (x != nullptr) {
@@ -118,7 +106,6 @@ void showAllJurnalis(ListJurnalis J) {
         cout << "Jurnalis ke-" << nomor << endl;
         cout << "ID Jurnalis : " << p->info.idJurnalis << endl;
         cout << "Nama        : " << p->info.nama << endl;
-        cout << "Bidang      : " << p->info.bidang << endl;
         cout << "Status      : " << p->info.status << endl;
         cout << "-------------------------------------" << endl;
 

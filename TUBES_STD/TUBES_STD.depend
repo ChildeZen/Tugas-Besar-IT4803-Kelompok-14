@@ -61,10 +61,10 @@
 	<iostream>
 	"Berita.h"
 
-1766056227 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\jurnalis_103032400031.cpp
+1766072936 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\jurnalis_103032400031.cpp
 	"Jurnalis.h"
 
-1766056821 c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\jurnalis.h
+1766072910 c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\jurnalis.h
 	<iostream>
 	<string>
 	"Berita.h"
@@ -72,7 +72,7 @@
 1766029690 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\jurnalis_103032400126.cpp
 	"Jurnalis.h"
 
-1766039647 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\main.cpp
+1766071412 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\main.cpp
 	<iostream>
 	"main.h"
 	"Jurnalis.h"
@@ -83,23 +83,24 @@
 	"Jurnalis.h"
 	"Berita.h"
 
-1766060681 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\relation_103032400031.cpp
+1766072911 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\relation_103032400031.cpp
 	"Berita.h"
 	"Jurnalis.h"
 
-1766056821 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\relation_103032400126.cpp
-	"Jurnalis.h"
-	"Berita.h"
-	<iostream>
-
-1766059875 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\main_user.cpp
+1766071042 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\relation_103032400126.cpp
 	"Jurnalis.h"
 	"Berita.h"
 	<iostream>
 
-1766061319 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\mainadmin.cpp
+1766071525 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\main_user.cpp
+	"Jurnalis.h"
+	"Berita.h"
+	<iostream>
+
+1766072910 source:c:\users\rasyi\documents\sem 3\stuktur data\tugas-besar-it4803-kelompok-14\tubes_std\mainadmin.cpp
 	"main.h"
 	"Jurnalis.h"
 	"Berita.h"
 	<iostream>
+	<string>
 

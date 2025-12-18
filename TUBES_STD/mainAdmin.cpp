@@ -54,7 +54,6 @@ void menuParent(ListJurnalis &LJ) {
         case 1: { // Tambahkan kurung kurawal untuk scope variabel
             cout << "ID      : "; cin >> J.idJurnalis;
             cout << "Nama    : "; cin >> ws; getline(cin, J.nama);
-            cout << "Bidang  : "; getline(cin, J.bidang);
             cout << "Status  : "; cin >> J.status;
 
             bool namaDipakai = false;
@@ -80,7 +79,6 @@ void menuParent(ListJurnalis &LJ) {
         case 2:
             cout << "ID      : "; cin >> J.idJurnalis;
             cout << "Nama    : "; cin >> ws; getline(cin, J.nama);
-            cout << "Bidang  : "; getline(cin, J.bidang);
             cout << "Status  : "; cin >> J.status;
 
             P = allocateJurnalis(J);
@@ -95,7 +93,6 @@ void menuParent(ListJurnalis &LJ) {
             if (prec != nullptr) {
                 cout << "ID      : "; cin >> J.idJurnalis;
                 cout << "Nama    : "; cin >> ws; getline(cin, J.nama);
-                cout << "Bidang  : "; getline(cin, J.bidang);
                 cout << "Status  : "; cin >> J.status;
 
                 P = allocateJurnalis(J);
@@ -141,15 +138,40 @@ void menuParent(ListJurnalis &LJ) {
             break;
 
         case 7:
-            cout << "Cari ID Jurnalis: "; cin >> id;
-            P = findJurnalisByid(LJ, id);
-            if (P != nullptr)
-                cout << "Ditemukan: " << P->info.nama << " (Bidang: " << P->info.bidang << ")" << endl;
-            else
-                cout << "Tidak ditemukan\n";
+            int subOption;
+            system("cls");
+            cout << "====== CARI JURNALIS ======\n";
+            cout << "1. Berdasarkan ID\n";
+            cout << "2. Berdasarkan Nama\n";
+            cout << "4. Berdasarkan Status\n";
+            cout << "Choose search criteria: ";
+            cin >> subOption;
+
+            if (subOption == 1) {
+                cout << "Cari ID: "; cin >> id;
+                P = findJurnalisByid(LJ, id);
+            } else if (subOption == 2) {
+                string nama;
+                cout << "Cari Nama: "; cin >> ws; getline(cin, nama);
+                P = findJurnalisByName(LJ, nama); // Pastikan fungsi ini ada
+            }else if (subOption == 3) {
+                string status;
+                cout << "Cari Status: "; cin >> status;
+                P = findJurnalisByStatus(LJ, status);
+            }
+
+            // Tampilkan hasil
+            if (P != nullptr) {
+                cout << "\n--- Data Ditemukan ---\n";
+                cout << "ID     : " << P->info.idJurnalis << endl;
+                cout << "Nama   : " << P->info.nama << endl;
+                cout << "Status : " << P->info.status << endl;
+            } else {
+                cout << "\nData Jurnalis tidak ditemukan.\n";
+            }
+
             system("pause");
             break;
-
         case 8:
             showAllJurnalis(LJ);
             system("pause");
@@ -183,7 +205,8 @@ void menuChild(ListBerita &LB) {
 
         switch (option) {
         case 1:
-            cout << "Judul   : "; cin >> ws; getline(cin, B.judulBerita);
+            cout << "Judul   : ";
+            cin >> B.judulBerita;
             cout << "Tema    : "; getline(cin, B.temaBerita);
             cout << "Tanggal : "; cin >> B.tanggal;
             P = allocateBerita(B);

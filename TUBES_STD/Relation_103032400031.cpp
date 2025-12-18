@@ -101,7 +101,6 @@ void showJurnalisByBerita(ListJurnalis J, adrBerita target){
                 cout << "Jurnalis:" << endl;
                 cout << "ID     : " << p->info.idJurnalis << endl;
                 cout << "Nama   : " << p->info.nama << endl;
-                cout << "Bidang : " << p->info.bidang << endl;
                 found = true;
                 break;
             }

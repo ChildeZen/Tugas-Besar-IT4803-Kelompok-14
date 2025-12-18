@@ -146,6 +146,7 @@ int countBeritaTanpaJurnalis(ListBerita B, ListJurnalis J){
 }
 
 
+//belum
 void disconnectJurnalisBerita(ListJurnalis &J, ListBerita B, string namaJurnalis, string judulBerita){
     adrJurnalis P = findJurnalisByName(J, namaJurnalis);
     adrBerita targetBerita = findBerita(B, judulBerita);
@@ -182,6 +183,8 @@ void disconnectJurnalisBerita(ListJurnalis &J, ListBerita B, string namaJurnalis
 
 //kodingan untuk kasus yang mikir sendiri//
 
+
+//belum
 void deleteBeritaAman(ListBerita &B, ListJurnalis &J, string judul) {
     // 1. Cari dulu beritanya ada atau tidak
     adrBerita target = findBerita(B, judul);
@@ -221,6 +224,7 @@ void deleteBeritaAman(ListBerita &B, ListJurnalis &J, string judul) {
     }
 }
 
+//belum
 void deleteJurnalisLengkap(ListJurnalis &J, string nama) {
     // 1. Cari Jurnalisnya
     adrJurnalis P = findJurnalisByName(J, nama);
