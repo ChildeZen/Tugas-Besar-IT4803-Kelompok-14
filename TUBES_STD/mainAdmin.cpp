@@ -67,6 +67,7 @@ void menuParent(ListJurnalis &LJ, ListBerita &LB) {
                 cout << "Nama        : "; cin >>  J.nama;
                 cout << "Status      : "; cin >> J.status;
 
+
                 if (findJurnalisByName(LJ, J.nama) != NULL) {
                     cout << "Nama sudah ada!" << endl;
                 } else {
@@ -85,7 +86,6 @@ void menuParent(ListJurnalis &LJ, ListBerita &LB) {
                 }
                 system("pause");
                 break;
-
             case 2:
                 cout << "=== INSERT LAST JURNALIS ===" << endl;
                 cout << "ID Jurnalis : "; cin >> J.idJurnalis;
@@ -98,7 +98,6 @@ void menuParent(ListJurnalis &LJ, ListBerita &LB) {
                     P = allocateJurnalis(J);
                     insertLastJurnalis(LJ, P);
                     cout << "Jurnalis berhasil ditambahkan!" << endl;
-
                     cout << "\nHubungkan Jurnalis ini ke Berita yang sudah ada?" << endl;
                     cout << "1. Ya\n2. Tidak\nPilih: ";
                     cin >> x;

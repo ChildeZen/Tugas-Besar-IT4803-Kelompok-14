@@ -163,9 +163,7 @@ void menuUser(ListJurnalis &LJ, ListBerita &LB) {
             break;
 
         }
-
-
-        }
     }
+}
 }
 
